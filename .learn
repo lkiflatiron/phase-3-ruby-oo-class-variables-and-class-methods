@@ -1,5 +1,7 @@
 tags:
-  - tag1
+  - class variables
+  - class methods
+  - scope
 languages:
-  - language1
+  - Ruby
 resources: 0
