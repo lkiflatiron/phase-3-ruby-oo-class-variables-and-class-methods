@@ -125,16 +125,16 @@ class Album
   @@album_count 
   
   def initialize
-    @@album += 1
+    @@album_count += 1
   end
   
   def self.count
-    @@album
+    @@album_count
   end
 end
 ```
 
-Here we are using the `@@album` class variable, inside of our `#initialize` method, which is an instance method. We are saying: when a new album is created, access the `@@album_count` class variable and increment it's value by 1. 
+Here we are using the `@@album_count` class variable, inside of our `#initialize` method, which is an instance method. We are saying: when a new album is created, access the `@@album_count` class variable and increment it's value by 1. 
 
 We can access our class variables anywhere in our class: in both class and instance methods. 
 
