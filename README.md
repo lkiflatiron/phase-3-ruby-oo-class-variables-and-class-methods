@@ -11,7 +11,7 @@
 
 All objects are bundles of data and logic––or attributes and behavior. We understand this to be true of instances of a class. Each instances contains attributes or properties as well as methods that can enact behaviors. 
 
-For example, let's say we have a class, `Album`. Every individual album instance should have a property, `@release_date` and an instance method `#release_date` that exposes or reveals that property. 
+For example, let's say we have a class, `Album`. Every individual album instance should have a release date attribute. To accomplish this, we'll define an instance variable, `@release_date` and an instance method `#release_date` that exposes or reveals that variable. 
 
 ```ruby
 class Album
@@ -23,6 +23,7 @@ class Album
   def release_date
     @release_date
   end
+end
 ```
 
 Here we have an instance variable, `@release_date`, which can be set equal to a value using the `release_date=()` method, a setter method. Then, we have a getter method `release_date` that returns the value of `@release_date`. Now, we can execute the following:
@@ -31,7 +32,7 @@ Here we have an instance variable, `@release_date`, which can be set equal to a 
 album = Album.new
 album.release_date = 1991
 album.release_date 
-  => 1991
+  # => 1991
 ```
 
 What you might not know, however, is that the `Album` class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, than the entire `Album` class itself absolutely qualifies. 
@@ -78,6 +79,7 @@ class Album
   def release_date
     @release_date
   end
+end
 ```
 
 Great, now we have a class variable to store our count of albums in. We can't yet access that variable from outside of our class though. How can we expose the contents of that variable? With a class method. 
@@ -144,5 +146,5 @@ Album.new
 Album.new
 
 Album.count
-  => 3
+  # => 3
 ```
