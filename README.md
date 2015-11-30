@@ -100,7 +100,7 @@ Let's define a class method `.count` that returns the current count of albums.
 
 ```ruby
 class Album
-  @@album_count
+  @@album_count = 0
   
   def self.count
     @@album_count
@@ -122,7 +122,7 @@ Currently, however, our `@@album_count` is stuck at `0`. When and how should we 
 
 ```ruby
 class Album
-  @@album_count 
+  @@album_count = 0 
   
   def initialize
     @@album_count += 1
