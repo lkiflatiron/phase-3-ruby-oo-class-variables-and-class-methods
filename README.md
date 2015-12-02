@@ -148,3 +148,5 @@ Album.new
 Album.count
   # => 3
 ```
+
+<a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
