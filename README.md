@@ -9,7 +9,7 @@
 
 ## Introduction: Classes are Objects Too
 
-All objects are bundles of data and logic––or attributes and behavior. We understand this to be true of instances of a class. Each instances contains attributes or properties as well as methods that can enact behaviors. 
+All objects are bundles of data and logic––or attributes and behavior. We understand this to be true of instances of a class. Each instance contains attributes or properties as well as methods that can enact behaviors. 
 
 For example, let's say we have a class, `Album`. Every individual album instance should have a release date attribute. To accomplish this, we'll define an instance variable, `@release_date` and an instance method `#release_date` that exposes or reveals that variable. 
 
@@ -148,5 +148,3 @@ Album.new
 Album.count
   # => 3
 ```
-
-<a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
