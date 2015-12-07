@@ -118,7 +118,7 @@ It will return `0`.
 
 ### Operating on a class variable inside an instance method
 
-Currently, however, our `@@album_count` is stuck at `0`. When and how should we increment it? The count of albums should go up as soon as a new album is create, or initialized. We can hook into this moment in time in our `#initialize` method. 
+Currently, however, our `@@album_count` is stuck at `0`. When and how should we increment it? The count of albums should go up as soon as a new album is created, or initialized. We can hook into this moment in time in our `#initialize` method. 
 
 ```ruby
 class Album
@@ -148,5 +148,3 @@ Album.new
 Album.count
   # => 3
 ```
-
-<a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
