@@ -37,9 +37,9 @@ album.release_date
 
 What you might not know, however, is that the `Album` class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, than the entire `Album` class itself absolutely qualifies. 
 
-The `Album` class can have it's own variables and methods. We call these class variables and class methods. 
+The `Album` class can have its own variables and methods. We call these class variables and class methods. 
 
-## Why use Class Variables and Methods
+## Why Use Class Variables and Methods
 
 Let's say you wanted to keep a counter for how many albums you had in your music collection. That way, you can brag to your friends about what a music aficionado you are. The current code in our `Album` class has no way to keep such a count. Looks like we will have to write some code to accommodate this new feature of our program.
 
