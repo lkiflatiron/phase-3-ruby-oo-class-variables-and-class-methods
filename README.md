@@ -35,7 +35,7 @@ album.release_date
   # => 1991
 ```
 
-What you might not know, however, is that the `Album` class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, than the entire `Album` class itself absolutely qualifies. 
+What you might not know, however, is that the `Album` class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, then the entire `Album` class itself absolutely qualifies. 
 
 The `Album` class can have its own variables and methods. We call these class variables and class methods. 
 
@@ -59,7 +59,7 @@ and return the number of existing albums. Let's build out this capability now.
 
 ## Building Class Methods and Using Class Variables
 
-An instance variable is responsible for holding information regarding an instance of a class and is accessible only to that instance of the class. A class variable is accessible to the the entire class––it has **class scope**. A class method is a method that is called on the class itself, not on the instances of that class. Class variables store information regarding the class as a whole and class methods enact behaviors that belong to the whole class, not just to individual instances of that class. 
+An instance variable is responsible for holding information regarding an instance of a class and is accessible only to that instance of the class. A class variable is accessible to the entire class––it has **class scope**. A class method is a method that is called on the class itself, not on the instances of that class. Class variables store information regarding the class as a whole and class methods enact behaviors that belong to the whole class, not just to individual instances of that class. 
 
 ### Defining a class variable
 
@@ -134,7 +134,7 @@ class Album
 end
 ```
 
-Here we are using the `@@album_count` class variable, inside of our `#initialize` method, which is an instance method. We are saying: when a new album is created, access the `@@album_count` class variable and increment it's value by 1. 
+Here we are using the `@@album_count` class variable, inside of our `#initialize` method, which is an instance method. We are saying: when a new album is created, access the `@@album_count` class variable and increment its value by 1. 
 
 We can access our class variables anywhere in our class: in both class and instance methods. 
 
