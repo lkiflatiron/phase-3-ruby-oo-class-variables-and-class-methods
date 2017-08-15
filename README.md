@@ -45,7 +45,7 @@ Let's say you wanted to keep a counter for how many albums you had in your music
 
 When it comes to adding new features or functionalities to our code, we start out by asking a question: whose responsibility is it to enact this behavior or functionality? 
 
-Right now, our program is pretty simple. We have an `Album` class and we have album instances. So, is it the responsibility of an individual album to keep a count of all of the other albums? Or is it the responsibility of the `Album` class, which actually produces the individual albums, to keep a running count? I think we can agree that it *isn't* the job of the individual albums, but the job of the `Album` class to keep a count of all of instances it produces. 
+Right now, our program is pretty simple. We have an `Album` class and we have album instances. So, is it the responsibility of an individual album to keep a count of all of the other albums? Or is it the responsibility of the `Album` class, which actually produces the individual albums, to keep a running count? I think we can agree that it *isn't* the job of the individual albums, but the job of the `Album` class to keep a count of all of the instances it produces. 
 
 Now that we've decided whose job it is to enact the "keep a count of all albums" behavior, we can talk about *how* we enact that behavior. 
 
