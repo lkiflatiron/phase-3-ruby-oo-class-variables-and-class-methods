@@ -150,6 +150,3 @@ Album.count
 ```
 
 If at any point you need a refresher on different types of Ruby variables, [check this blog post](https://medium.com/swlh/hitchhikers-guide-to-ruby-variables-1b4cf83d540c).
-
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-readme' title='Class Variables and Class Methods'>Class Variables and Class Methods</a> on Learn.co and start learning to code for free.</p>
