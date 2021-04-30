@@ -1,11 +1,11 @@
-# Class Variables and Class Methods
+# Class Variables and Methods
 
-## Objectives
+## Learning Goals
 
-1. Define a class variable. 
-2. Define a class method. 
-3. Understand why and when to use class variables and methods. 
-4. Understand the scope of class variables and class methods. 
+- Define a class variable
+- Define a class method
+- Understand why and when to use class variables and methods 
+- Understand the scope of class variables and class methods 
 
 ## Introduction: Classes are Objects Too
 
