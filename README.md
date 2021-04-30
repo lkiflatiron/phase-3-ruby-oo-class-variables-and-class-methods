@@ -1,4 +1,4 @@
-# Class Variables and Methods
+# Class Variables and Class Methods
 
 ## Learning Goals
 
