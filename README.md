@@ -83,7 +83,8 @@ we could do something like:
 Album.count
 ```
 
-and return the number of existing albums. Let's build out this capability now.
+...and return the number of existing albums. Let's build out this capability
+now.
 
 ## Building Class Methods and Using Class Variables
 
@@ -99,7 +100,7 @@ Class variables are typically used to store information regarding the class as a
 whole and class methods enact behaviors that belong to the whole class, not just
 to individual instances of that class.
 
-### Defining a class variable
+### Defining a Class Variable
 
 A class variable looks like this: `@@variable_name`. Just like an instance or a
 local variable, you can set it equal to any type of data.
@@ -125,7 +126,7 @@ Great, now we have a class variable to store our count of albums in. We can't
 yet access that variable from outside of our class though. How can we expose the
 contents of that variable? With a class method.
 
-### Defining a class method
+### Defining a Class Method
 
 A class method is defined like this:
 
@@ -224,14 +225,79 @@ Album.count();
 // => 3
 ```
 
+## Class Constants
+
+One other type of variable that can be useful when building out classes is a
+**class constant**. Class constants have a lot in common with class variable.
+Both types of variable:
+
+- Are defined in the body of the class
+- Can be accessed from within a class method
+- Can be accessed from within an instance method
+
+A class constant looks a bit different than a class variable. It's defined using
+all capital letters, like so:
+
+```rb
+class User
+  ROLES = ["Admin", "Moderator", "Contributor"]
+end
+```
+
+When deciding when to use a class constant or a class variable, the key
+distinction is that class constants are used to store data that _doesn't change_
+(is constant), while class variables are used to store data that does change.
+
+For example, we could define a list of valid genres for our album class using
+a class constant:
+
+```rb
+class Album
+  GENRES = ["Hip-Hop", "Pop", "Jazz"]
+
+  @@album_count = 0
+
+  def initialize(genre)
+    if GENRES.include?(genre)
+      @@album_count += 1
+    end
+  end
+
+  def self.count
+    @@album_count
+  end
+end
+```
+
+Scope-wise, class constants can _also_ be accessed from outside of the class
+using this syntax:
+
+```rb
+Album::GENRES
+# => ["Hip-Hop", "Pop", "Jazz"]
+```
+
+Unlike in JavaScript, declaring a constant variable in Ruby doesn't actually
+prevent the variable from being reassigned (though it will give a warning
+message):
+
+```rb
+Album::GENRES = "not an array anymore"
+# warning: already initialized constant Album::GENRES
+# => "not an array anymore"
+```
+
+However, declaring a variable with a constant is still a good indicator to other
+developers that they _shouldn't_ reassign the variable's value.
+
 ## Conclusion
 
 So far in our object-oriented Ruby code, we've focused on defining behavior that
 is specific to on individual instance of a class using **instance methods** and
-**instance variables**. By also using **class methods** and **class variables**,
-we can expand on our classes' functionality by defining behavior that's not tied
-to one particular instance of a class, but is related more generally to the
-class itself.
+**instance variables**. By also using **class methods**, **class variables**,
+and **class constants**, we can expand on our classes' functionality by defining
+behavior that's not tied to one particular instance of a class, but is related
+more generally to the class itself.
 
 ## Resources
 
