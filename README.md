@@ -293,7 +293,7 @@ developers that they _shouldn't_ reassign the variable's value.
 ## Conclusion
 
 So far in our object-oriented Ruby code, we've focused on defining behavior that
-is specific to on individual instance of a class using **instance methods** and
+is specific to an individual instance of a class using **instance methods** and
 **instance variables**. By also using **class methods**, **class variables**,
 and **class constants**, we can expand on our classes' functionality by defining
 behavior that's not tied to one particular instance of a class, but is related
